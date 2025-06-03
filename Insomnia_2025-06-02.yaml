@@ -1,0 +1,247 @@
+type: collection.insomnia.rest/5.0
+name: Parcial 2 Ncapas
+meta:
+  id: wrk_70294eea83274b5694583d830f82fee0
+  created: 1748910494525
+  modified: 1748910494525
+collection:
+  - url: http://localhost:8082/books?genre=Horror
+    name: por genero
+    meta:
+      id: req_319939eb8bf24196947e97fc5d8356e1
+      created: 1748913752722
+      modified: 1748917382072
+      isPrivate: false
+      sortKey: -1748913752722
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.1.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8082/books/978-3-16-148410-1
+    name: por codigo
+    meta:
+      id: req_589528430eb44086845983816dab4bfe
+      created: 1748913754530
+      modified: 1748917375816
+      isPrivate: false
+      sortKey: -1748913754530
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.1.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8082/books?author=Stephen King
+    name: por autor
+    meta:
+      id: req_859789254b17477b8759d77c0270c6cf
+      created: 1748913756801
+      modified: 1748917366243
+      isPrivate: false
+      sortKey: -1748913756802
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.1.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8082/books
+    name: libros
+    meta:
+      id: req_d0163b3fc77942a88a76a761e1bef869
+      created: 1748913758914
+      modified: 1748917261904
+      isPrivate: false
+      sortKey: -1748913758914
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.1.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8082/books
+    name: crear libro
+    meta:
+      id: req_77e47f608bee4f149142890d4dc5fdc6
+      created: 1748913776321
+      modified: 1748917346640
+      isPrivate: false
+      sortKey: -1748913776322
+    method: POST
+    body:
+      mimeType: application/json
+      text: |
+        {
+          "title": "qwerssda",
+          "author": "Stephen King",
+          "isbn": "978-3-16-148410-1",
+          "publicationYear": 1986,
+          "language": "English",
+          "pages": 1138,
+          "genre": "Horror"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.1.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8082/books?language=English
+    name: por idioma
+    meta:
+      id: req_ff9ad18c043c4f1ab3395f40604163df
+      created: 1748916670801
+      modified: 1748917115642
+      isPrivate: false
+      sortKey: -1748916670801
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.1.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8082/books?minPages=1000&maxPages=1200
+    name: por paginas
+    meta:
+      id: req_738d93c5f5fb4a13871747ee23ce0291
+      created: 1748916731414
+      modified: 1748917354382
+      isPrivate: false
+      sortKey: -1748916731414
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.1.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8082/books/6d38f5b8-dcf1-49b1-8548-f153a63c7a78
+    name: New Request
+    meta:
+      id: req_10e026c1b4ee41cd92eea2797ef67c64
+      created: 1748916759535
+      modified: 1748917270026
+      isPrivate: false
+      sortKey: -1748916759535
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |
+        {
+          "title": "1984",
+        	"language": "Spanish"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.1.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: " http://localhost:8082/books/6d38f5b8-dcf1-49b1-8548-f153a63c7a78"
+    name: New Request
+    meta:
+      id: req_80dab01c32c44fd69f55cc3a06223a73
+      created: 1748916811495
+      modified: 1748917279977
+      isPrivate: false
+      sortKey: -1748916811495
+    method: DELETE
+    body:
+      mimeType: application/json
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.1.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_41bb7d253c08795aed4d3fd4e7226cce9e905f50
+    created: 1748910494540
+    modified: 1748916141752
+  cookies:
+    - key: pga4_session
+      value: 4f7aa046-6f36-4435-956a-9c5cd54c0fac!EHNyEH+YyxpqtThEa+RQbrXtvyTKRJ1rJj2+lqoYn68=
+      domain: localhost
+      path: /
+      httpOnly: true
+      hostOnly: true
+      creation: 2025-06-03T01:25:50.845Z
+      lastAccessed: 2025-06-03T01:25:50.845Z
+      sameSite: lax
+      id: 9c5a3893-0b7d-45a0-b71e-69e72408985b
+    - key: JSESSIONID
+      value: F01EC82E2610BFF079E689D9CC0998FF
+      domain: localhost
+      path: /
+      httpOnly: true
+      hostOnly: true
+      creation: 2025-06-03T01:26:12.404Z
+      lastAccessed: 2025-06-03T02:02:21.752Z
+      id: 49adb33e-7b9b-45c5-ba2f-fb9d1e1dfdb9
+environments:
+  name: Base Environment
+  meta:
+    id: env_41bb7d253c08795aed4d3fd4e7226cce9e905f50
+    created: 1748910494533
+    modified: 1748910494533
+    isPrivate: false
